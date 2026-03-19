@@ -1,6 +1,6 @@
 {% set provider = "sshtunnel" %}
 {% set goname = "github.com/johanneswuerbach/terraform-provider-"+provider.lower() %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: eeb164e28bcd61f95f0082355e4f7a79f0df7dd66fc28e3f6ef59d477fce4091
+  sha256: f8335428023666dd4e0ef0aa97d4aaf65a0ff60627a5b8d5c26964c192eac740
 
 build:
   number: 0
